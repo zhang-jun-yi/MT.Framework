@@ -4,15 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55E78580-119E-4907-AB6C-9BDB1A1AB99F}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MT.Data</RootNamespace>
-    <AssemblyName>MT.Data</AssemblyName>
+    <ProjectGuid>{36A12314-747D-486C-A9DE-6E355C524FD0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MT.Console</RootNamespace>
+    <AssemblyName>MT.Console</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +22,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,8 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IDataModle.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MT.Account\MT.Account.csproj">
+      <Project>{37aedc40-71ac-4b2d-b912-70779b6332c3}</Project>
+      <Name>MT.Account</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MT.Core\MT.Core.csproj">
+      <Project>{7e4575d5-3996-41bb-b77b-96e48d69dc53}</Project>
+      <Name>MT.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MT.Data\MT.Data.csproj">
+      <Project>{55e78580-119e-4907-ab6c-9bdb1a1ab99f}</Project>
+      <Name>MT.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

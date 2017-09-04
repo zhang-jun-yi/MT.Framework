@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MT.Data
+namespace MT.Account
 {
-    public class Class1
+    public class Amount
     {
     }
 }

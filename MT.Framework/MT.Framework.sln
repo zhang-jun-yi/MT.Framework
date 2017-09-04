@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{28E2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT.Account", "MT.Account\MT.Account.csproj", "{37AEDC40-71AC-4B2D-B912-70779B6332C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT.Mconsole", "MT.Console\MT.Mconsole.csproj", "{36A12314-747D-486C-A9DE-6E355C524FD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{37AEDC40-71AC-4B2D-B912-70779B6332C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37AEDC40-71AC-4B2D-B912-70779B6332C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37AEDC40-71AC-4B2D-B912-70779B6332C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A12314-747D-486C-A9DE-6E355C524FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A12314-747D-486C-A9DE-6E355C524FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A12314-747D-486C-A9DE-6E355C524FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A12314-747D-486C-A9DE-6E355C524FD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
